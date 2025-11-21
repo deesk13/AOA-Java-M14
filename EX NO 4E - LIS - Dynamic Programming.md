@@ -1,9 +1,14 @@
-EX 4E Longest Increasing Subsequence - Dynamic Programming.
-DATE:06/10/25
-AIM:
-To write a Java program to for given constraints. Given an integer array nums, return the length of the longest strictly increasing subsequence. Example 1: Input: nums = [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
 
-Algorithm
+# EX 4E Longest Increasing Subsequence - Dynamic Programming.
+## DATE:06/10/25
+## AIM:
+To write a Java program to for given constraints.
+Given an integer array nums, return the length of the longest strictly increasing subsequence.
+Example 1:
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+## Algorithm
 1.Start and read the number of elements n, then input the array nums[].
 
 2.Initialize a DP array dp[] with all values as 1 (each element is an LIS of length 1).
@@ -13,12 +18,14 @@ Algorithm
 4.If nums[i] > nums[j], update dp[i] = max(dp[i], dp[j] + 1).
 
 5.After filling the DP array, the maximum value in dp[] is the length of the Longest Increasing Subsequence.
+  
 
-Program:
+## Program:
+```
 /*
 Program to implement Reverse a String
 Developed by:  Deva dharshini
-Register Number: 212223240026
+Register Number:  212223240026
 */
 import java.util.*;
 
@@ -62,7 +69,12 @@ public static void main(String[] args) {
     }
 }
 
-Output:
-image
-Result:
+```
+
+## Output:
+
+<img width="815" height="249" alt="image" src="https://github.com/user-attachments/assets/66bd3506-249e-4700-b247-c4ef978cd779" />
+
+
+## Result:
 The program successfully implemented and the expected output is verified.
